@@ -59,6 +59,7 @@ nav {
 }
 
 /*Create Account*/
+
 .cacc {
     letter-spacing: -0.2px;
     font-weight: 600;
@@ -68,6 +69,76 @@ nav {
     color: black;
 }
 
+.accountCreated{
+    display: inline-flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 81%;
+    width: 170px;
+    display: none;
+    column-gap: 3%;
+    justify-content: space-between;
+}
+.accountCreated img{
+    width: 34px;
+    height: 34px;
+}
+.accountCreated .cacc{
+    align-items: center;
+}
+
+/*SignIn and SignUp*/
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: -50px;
+    right: -12px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #666666;
+    font-family: none;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+.card{
+    height: 500px;
+    width: 736px;
+    position: relative;
+    transition: 0.5s;
+}
+.form{
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: 0.5s ease-in;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+} 
 /* front */
 .front h2{
     color: black;
@@ -657,57 +728,4 @@ input[type="submit"]{
     margin-top: 50px;
 }
 
-/*SignIn and SignUp*/
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
 
-.overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    border-radius: 5px;
-}
-
-.close {
-    position: absolute;
-    top: -50px;
-    right: -12px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #e0e0e0;
-    color: #666666;
-    font-family: none;
-    align-items: center;
-    text-align: center;
-    font-weight: bolder;
-    border: 2px solid #e0e0e0;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-}
-
-.card{
-    height: 500px;
-    width: 736px;
-    position: relative;
-    transition: 0.5s;
-}
-.form{
-    height: 100%;
-    width: 100%;
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    transition: 0.5s ease-in;
-    border-radius: 10px;
-    position: relative;
-    background-color: white;
-} 

@@ -15,8 +15,13 @@ function flip1(){
         transform='rotateY(0deg)';
 }
 
-
 function flip(){
     document.getElementById("form").style.
     transform='rotateY(180deg)';
 }
+
+document.getElementById('submit').addEventListener('click', function() {
+    document.getElementById('signupOverlay').style.display = 'none';
+    document.getElementById('account').style.opacity = 0;
+    document.getElementById('accountCreated').style.display = 'flex';
+});

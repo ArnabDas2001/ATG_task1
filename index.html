@@ -2,24 +2,21 @@
 <html lang="en">
 
 <head>
-    <!--METAS-->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--TITLE-->
     <title>ATG.WORLD</title>
     <link rel="icon" type="image/x-icon" href="assets/Union 1.png">
 
-    <!--CSS-->
     <link rel="stylesheet" href="style.css" />
 
-    <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/f540fd6d80.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!--NAVBAR-->
+    <!--Navbar-->
     <header>
         <nav class="navbar">
             <div class="max-width">
@@ -30,12 +27,19 @@
                     <i class="search-icon fas fa-search"></i>
                     <input type="text" id="search-input" placeholder="Search for your favourite groups in ATG" />
                 </div>
-                <div class="account">
+                <div class="account" id="account">
                     <p class="cacc">
                         Create account.
                         <a href="#" class="txtfree" id="signupButton">It's free!
                             <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i>
                         </a>
+                    </p>
+                </div>
+                <div class="accountCreated" id="accountCreated">
+                    <img class="dp" src="assets/dp4.png" alt="dp" />
+                    <p class="cacc">
+                        Siddharth Goyal
+                        <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i>
                     </p>
                 </div>
 
@@ -61,7 +65,7 @@
                                 <input type="password" required="required" placeholder="Password">
                                 <i></i>
                             </div>
-                        <input type="Submit" value="Sign In">
+                        <input type="Submit" value="Sign In" id="submit">
                 
                         <div class="facebookBox">
                         <img src="assets/facebook_logo.png" alt="">
@@ -114,7 +118,7 @@
                             <input type="password" required="required" placeholder="Confirm Password">
                             <i></i>
                         </div>
-                    <input type="submit" value="Create Account" style="margin-top: 10px;">
+                    <input type="submit" value="Create Account" style="margin-top: 10px;" id="submit">
                     
                     <div class="facebookBox">
                         <img src="assets/facebook_logo.png" alt="">
@@ -153,7 +157,7 @@
     </nav>
 </header>
 
-    <!--BODY TOP PART-->
+    <!--header-->
     <section class="image-container">
         <img class="bgimg" src="./assets/BGimg.png" alt="reload please" />
         <div class="text-over-image">
@@ -162,7 +166,7 @@
         </div>
     </section>
 
-    <!--The Category maybe-->
+    <!--catagories-->
     <section class="category-container">
         <div class="max-width linew">
             <div class="category-list">
@@ -186,7 +190,7 @@
                     <p class="note"><i class="fa-solid fa-circle-exclamation"></i> Your location will help us serve better and extend a personalised experience.</p>
                 </div>
                 <div class="rec-grp">
-                    <!--GROUPS-->
+                    <!--follow list-->
                     <p class="rec-head"><i class="fa-regular fa-thumbs-up"></i> RECOMMENDED GROUPS</p>
                     <div class="sidedp content1">
                         <div class="imgto">
@@ -222,10 +226,10 @@
                 </div>
             </div>
 
-        <!--The contents for the categories-->
+        <!--body content-->
         <div class="category-content" id="all">
 
-          <!--1st box-->  
+          <!--first card-->  
           <div class="Mainbox">
             <img class="aimg" src="assets/image1.png" alt="reconnect">
             <h2 class="its htype">✍️ Article</h2>
@@ -257,7 +261,7 @@
             </div>
           </div>
 
-          <!--Second Box-->
+          <!--Second card-->
           <div class="Mainbox">
             <img class="aimg" src="assets/image2.png" alt="reconnect">
             <h2 class="its htype">🔬 Education</h2>
@@ -289,7 +293,7 @@
             </div>
           </div>
 
-          <!--Third Box-->
+          <!--Third card-->
           <div class="Mainbox">
             <img class="aimg" src="assets/image3.png" alt="reconnect">
             <h2 class="its htype">🗓️ Meetup</h2>
@@ -325,7 +329,7 @@
             </div>
           </div>
 
-          <!--Fouth box-->
+          <!--Fouth card-->
           <div class="Mainbox last">
             <h2 class="its htype">💼 Job</h2>
             <div class="regular-topic">
@@ -363,7 +367,7 @@
 
         </div>
 
-        <!--Articles only-->
+        <!--Articles-->
         <div class="category-content" id="articles">
             <div class="Mainbox">
                 <img class="aimg" src="assets/image1.png" alt="reconnect">
@@ -397,7 +401,7 @@
               </div>
         </div>
 
-        <!--Event-->
+        <!--Events-->
         <div class="category-content" id="event">
             <div class="Mainbox">
                 <img class="aimg" src="assets/image3.png" alt="reconnect">
@@ -469,7 +473,7 @@
               </div>
         </div>
 
-        <!--Job-->
+        <!--Jobs-->
         <div class="category-content" id="job">
             <div class="Mainbox last">
                 <h2 class="its htype">💼 Job</h2>
@@ -509,12 +513,12 @@
     </section>
 
 
-    <!--ALL JAVASCRIPT FILES LINKS-->
-    <!-- CATEGORY -->
+    <!--javascript-->
+
     <script src="js/category.js"></script>
     <script src="js/dropdown.js"></script>
-    <script src="js/buttonpress.js"></script>
-    <script src="js/followpress.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/followlist.js"></script>
     <script src="js/SignUp.js"></script>
 </body>
 
