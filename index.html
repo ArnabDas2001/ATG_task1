@@ -44,7 +44,7 @@
                 </div>
 
                 <!--SignIn/Up card-->
-                <div class="overlay" id="signupOverlay">
+            <div class="overlay" id="signupOverlay">
                     <div class="overlay-content">
                         <span class="close" id="closeOverlay"><i class="fa-solid fa-xmark"></i></span>
 
@@ -65,7 +65,7 @@
                                 <input type="password" required="required" placeholder="Password">
                                 <i></i>
                             </div>
-                        <input type="Submit" value="Sign In" id="submit">
+                        <input type="submit" value="Sign In" id="create">
                 
                         <div class="facebookBox">
                         <img src="assets/facebook_logo.png" alt="">
@@ -166,6 +166,17 @@
         </div>
     </section>
 
+    <!-- mobile header-->
+    <section class="image-containerMD">
+        <button class="joinBtn" id="joinBtn" onclick="toggleJoin(this)">Join Group</button>
+        <div><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+        <img class="bgimgMD" src="./assets/headerMD.png" alt="reload please" />
+        <div class="text-over-imageMD">
+            <h2 class="CEngMD">Computer Engineering</h2>
+            <p class="countCEMD">142,765 Computer Engineers follow this</p>
+        </div>
+    </section>
+
     <!--catagories-->
     <section class="category-container">
         <div class="max-width linew">
@@ -181,6 +192,14 @@
                 <button class="samebtn jogr" id="groupButton" onclick="toggleGroupStatus()"><i class="fa-sharp fa-solid fa-user-plus"></i> Join Group</button>
             </div>
         </div>
+
+        <!-- mobile linew -->
+
+        <div class="linewMD">
+             <h3>Posts(368)</h3>
+             <button>Filter: All <i id="ddown" class="fa-sharp fa-solid fa-caret-down"></i></button>
+        </div>
+
             <div class="side-bar">
                 <div class="your-location">
                     <i id="locc" class="fa-solid fa-location-dot"></i><input type="text" id="search-input" placeholder="Enter your Location" />
@@ -253,10 +272,16 @@
                 <div class="bel profile">
                     <img class="dp" src="assets/dp1.png" alt="reload">
                     <p class="uname">Sarthak Kamra</p>
+                    <p class="viewsMd"></i>1.4k views</p>
                 </div>
                 <div class="bel end">
                     <p class="views"><i id="eyeui" class="fa-regular fa-eye"></i>1.4k views</p>
                     <div class="sharebtn"><i class="fa-sharp fa-solid fa-share-nodes"></i></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><i class="fa-sharp fa-solid fa-share-nodes"></i><p>share</p></div>
                 </div>
             </div>
           </div>
@@ -285,10 +310,16 @@
                 <div class="bel profile">
                     <img class="dp" src="assets/dp2.png" alt="reload">
                     <p class="uname">Sarah West</p>
+                    <p class="viewsMd2"></i>4.8k views</p>
                 </div>
                 <div class="bel end">
                     <p class="views"><i id="eyeui" class="fa-regular fa-eye"></i>1.4k views</p>
                     <div class="sharebtn"><i class="fa-sharp fa-solid fa-share-nodes"></i></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><i class="fa-sharp fa-solid fa-share-nodes"></i><p>share</p></div>
                 </div>
             </div>
           </div>
@@ -321,10 +352,16 @@
                 <div class="bel profile">
                     <img class="dp" src="assets/dp3.png" alt="reload">
                     <p class="uname">Ronal Jones</p>
+                    <p class="viewsMd2"></i>800 views</p>
                 </div>
                 <div class="bel end">
                     <p class="views"><i id="eyeui" class="fa-regular fa-eye"></i>1.4k views</p>
                     <div class="sharebtn"><i class="fa-sharp fa-solid fa-share-nodes"></i></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><i class="fa-sharp fa-solid fa-share-nodes"></i><p>share</p></div>
                 </div>
             </div>
           </div>
@@ -356,10 +393,16 @@
                 <div class="bel profile">
                     <img class="dp" src="assets/dp4.png" alt="reload">
                     <p class="uname">Ronal Jones</p>
+                    <p class="viewsMd2"></i>1.7k views</p>
                 </div>
                 <div class="bel end">
                     <p class="views"><i id="eyeui" class="fa-regular fa-eye"></i>1.4k views</p>
                     <div class="sharebtn"><i class="fa-sharp fa-solid fa-share-nodes"></i></div>
+                </div>
+
+                <!-- views mobiel -->
+                <div class="bel endMd">
+                    <div class="sharebtnMd"><i class="fa-sharp fa-solid fa-share-nodes"></i><p>share</p></div>
                 </div>
             </div>
           </div>
@@ -509,9 +552,111 @@
                 </div>
               </div>
         </div>
-
     </section>
 
+    <div class="pencil" id="signupButtonMd">
+        <img class="logocircle" src="assets/Circle.png" alt="reload" />
+        <img class="pencilicon"src="assets/pen (1).png" alt="">
+    </div>
+
+    <!-- sign up md -->
+
+    <div class="overlayMd" id="signupOverlayMd">
+        <div class="overlay-content">
+            <span class="close" id="closeOverlayMd"><i class="fa-solid fa-xmark"></i></span>
+        <div class="card" id="card">
+        <div class="form" id="formMd">
+         <!--front-->
+            <div class="front">
+                <h2>Welcome Back!</h2>
+                <div class="inputbox">
+                    <input type="text" required="required" placeholder="Email">
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" required="required" placeholder="Password">
+                    <i></i>
+                </div>
+            <input type="submit" value="Sign In" id="create">
+    
+            <div class="facebookBox">
+            <img src="assets/facebook_logo.png" alt="">
+            <p>Sign in with Facebook</p>
+            </div>
+    
+            <div class="googleBox">
+                <img src="assets/google_logo.png" alt="">
+                <p>Sign in with Google</p>
+            </div>
+    
+            <div class="signup">
+                <button class="sunow" onclick="flip2()"
+                >or, Create Account</button>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password?</a>
+            </div>
+    
+            <div class="minimalimg">
+                <img src="assets/signimg.png" alt="">
+            </div>
+         </div>
+
+         <!-- back -->
+         <div class="back">
+            
+            <h2>Create Account</h2>
+            <div class="namebox">
+    
+                    <input type="text" required="required" placeholder="First Name">
+                    <i></i>
+            
+                    <input type="text" required="required" placeholder="Last Name">
+                    <i></i> 
+            </div>
+            <div class="inputbox2">
+                <input type="text" required="required" placeholder="Email">
+                <i></i>
+            </div>
+            <div class="inputbox2">
+                <input type="password" required="required" placeholder="Password">
+                <i></i>
+            </div>
+            <div class="inputbox2">
+                <input type="password" required="required" placeholder="Confirm Password">
+                <i></i>
+            </div>
+        <input type="submit" value="Create Account" style="margin-top: 10px;" id="submit">
+        
+        <div class="facebookBox">
+            <img src="assets/facebook_logo.png" alt="">
+            <p>Sign in with Facebook</p>
+        </div>
+    
+        <div class="googleBox">
+            <img src="assets/google_logo.png" alt="">
+            <p>Sign in with Google</p>
+        </div>
+    
+        <div class="signup1">
+            <button class="sunow1" onclick="flip3()"
+            >or, Sign In</button>
+        </div>
+    
+        <div class="minimalimg">
+            <img src="assets/signimg.png" alt="">
+        </div>
+    
+        <div class="Terms">
+            <a href="#">By signing up, you agree to our Terms & conditions, Privacy policy</a>
+        </div>
+    
+    </div>
+        </div>
+      </div>
+        
+    </div>
+</div>
 
     <!--javascript-->
 
