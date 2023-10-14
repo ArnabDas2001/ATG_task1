@@ -744,6 +744,9 @@ input[type="submit"]{
     display: none;
 }
 
+
+/* mobile responsive */
+
 @media (max-width: 500px){
     nav{
     display: none;
